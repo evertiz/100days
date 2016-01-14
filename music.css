@@ -1,0 +1,55 @@
+body {
+
+	margin: 0;
+	background: black;
+}
+
+
+.music-container {
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+}
+
+
+.music-box {
+	display: inline-block;
+	width: 250px;
+	height: 333px;
+	/* background: lime; */
+
+} 
+
+.card-container {
+  cursor: pointer;
+  height: 250px;
+  perspective: 600;
+  position: relative;
+  width: 250px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #282828;
+  color: white;
+  /* line-height: 150px; */
+  text-align: left;
+  transform: rotateY(180deg);
+}
+
+
